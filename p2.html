@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <script>
+        let n=Number(prompt("enter the value",''));
+        let l=parseInt(Math.log10(n))+1;
+        let mid;
+        if(l%2!=0){
+          mid=parseInt(n/Math.pow(10,parseInt(l/2))%10);
+        }else{
+          let m=parseInt(n/Math.pow(10,parseInt(l/2-1)));
+          mid=parseInt(m%10)+parseInt(m/10%10);
+        }
+alert("the middle element is: "+mid);
+        
+    </script>
+</body>
